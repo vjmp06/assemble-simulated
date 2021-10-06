@@ -111,8 +111,7 @@ function App() {
                 questao={questao.numero} 
                 numero={alternativa.numero}
                 opcao={alternativa.alternativa} 
-                resposta={convertePipeParaVirgula(alternativa.resposta)}
-                correta={questao.alternativaCorreta} />
+                resposta={convertePipeParaVirgula(alternativa.resposta)} />
             ))}
           </div>
         )

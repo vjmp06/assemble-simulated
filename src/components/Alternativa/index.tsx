@@ -5,18 +5,9 @@ export type Props = {
     numero: string;
     opcao: string;
     resposta: string;
-    correta: string;
 }
 
-function estaCorreta(opcao: string, correta: string): boolean {
-    if (opcao === correta) {
-        return true;
-    } else {
-        return false;
-    }
-}
-
-const Alternativa = ({questao, numero, opcao, resposta, correta}: Props) => {
+const Alternativa = ({questao, numero, opcao, resposta}: Props) => {
     if (questao === numero) {
         return <div className="alternativa">
         <input 
