@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 export type Props = {
     questao: string;
     numero: string;
